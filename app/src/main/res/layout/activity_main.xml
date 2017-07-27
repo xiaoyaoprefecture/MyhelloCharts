@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+       <ScrollView
+           android:id="@+id/mScrollView"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <lecho.lib.hellocharts.view.LineChartView
+            android:id="@+id/mLine_Chart"
+            android:layout_width="wrap_content"
+            android:layout_height="300dp" />
+        <lecho.lib.hellocharts.view.PieChartView
+            android:layout_gravity="center"
+            android:id="@+id/mPie_Chart"
+            android:layout_width="300dp"
+            android:layout_height="300dp" />
+        <lecho.lib.hellocharts.view.ColumnChartView
+            android:id="@+id/mColumnChartView"
+            android:layout_width="match_parent"
+            android:layout_height="300dp" />
+        </LinearLayout>
+     </ScrollView>
+</LinearLayout>
